@@ -1,0 +1,100 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:#eee;
+  color: #333;
+}
+
+.fila {
+  width: 90%;
+  margin: 1em auto;
+  /* background: #AFFF00; */
+  overflow: hidden;
+}
+
+.columna {
+  /* background: lightblue; */
+  box-sizing: border-box;
+  float: left;
+  margin-right: 2%;
+  padding: 1em 0;
+}
+
+
+
+
+/* Small grid */
+@media (min-width:480px ){
+  .columna {
+    width: 100%;
+  }
+
+}
+
+/* Medium grid */
+@media (min-width:768px ){
+
+}
+
+/* Large grid */
+@media (min-width:1024px ){
+
+  .bottom .columna {
+    width: 100%;
+    background: #D126A9;
+  }
+
+  /* Dos columnas */
+  .dos-columnas .columna {
+    width: 49%;
+    background: #9C42D1;
+  }
+
+  .dos-columnas .columna:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  /* Tres Columnas */
+  .tres-columnas .columna {
+    width: 32%;
+    background: #01B6AD;
+  }
+
+  .tres-columnas .columna:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  /* Cuatro Columnas */
+
+  .cuatro-columnas .columna {
+    width: 23.5%;
+    background: #1EE2A6;
+  }
+
+  .cuatro-columnas .columna:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  /* Seis Columnas */
+  .seis-columnas .columna {
+    width: 15%;
+    background: #C6FF4A;
+  }
+
+  .seis-columnas .columna:nth-child(6n) {
+    margin-right: 0;
+  }
+
+   /* Doce columnas */
+  .doce-columnas .columna {
+    width: 6.5%;
+    background: #FFFF00;
+  }
+
+  .doce-columnas .columna:nth-child(12n) {
+    margin-right: 0;
+  }
+}
